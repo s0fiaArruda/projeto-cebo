@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    font-family:'Ubuntu', sans-serif;
+    background-color: #4d1519;
+}
+
+*{
+    margin: 0px;
+  
+}
+
+/*começo do cabeçalho*/
+
+header{
+    display: flex;
+    background-color: #4d1519; 
+    justify-content: space-between;
+    height:100px;
+    width: 100%;
+}
+
+.logo{
+    font-family:'Lora', serif;
+    font-style: italic;
+    color:#a1937e;
+   padding: 25px;
+}
+
+.links{
+    display: flex;
+    padding-top: 3%;
+    padding-right: 2%;
+    gap: 30px;
+}
+
+.btn-pulse{
+    background-color: transparent;
+    border: none;
+    font-family:'Ubuntu', sans-serif;
+    color: #a1937e;
+    font-size: 15px;
+
+}
+
+.btn-pulse:visited{
+    background-color: transparent;
+    border: none;
+    font-family:'Ubuntu', sans-serif;
+    color: #a1937e;
+    font-size: 15px;
+
+}
+
+.link{
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.link:link{
+    color:#a1937e;
+    text-decoration: none;
+}
+
+.link:visited{
+    color: #a1937e;
+}
+
+.link:hover{
+    transform: scale(1.20);
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background:#FFFDD0;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s;
+    pointer-events: none;
+    border-radius: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+   opacity: 1;
+   transform: translateY(0);
+   pointer-events: auto;
+    
+}
+
+.dropdown-content a {
+    color: #374151;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: #e7e399;
+}
+
+
+/*fim do cabecalho*/
+
+
+/*começo do banner*/
+
+.banner{
+    background-image:url(../midia/estantelivros.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: auto;  
+}
+
+.text-banner{
+    color: #c6b39a;
+    font-family: 'Lora',serif;
+    font-size: 30px;
+    padding-left: 40px;
+    background: linear-gradient(80deg,rgba(77, 21, 25, 1) 67%, rgba(77, 21, 25, 0) 100%);
+    padding-bottom: 40px;
+}
+
+.title{
+    font-style: italic;
+    width: 80%;
+}
+
+.subtitle{
+    font-size:20px;
+    padding-top: 5%;
+    padding-bottom: 70px;
+    color:#a1937e;
+}
+
+.banner-img{
+    padding-right: 5%;
+}
+
+.banner-btn{
+    display: block;
+    background-color: #301413;
+    border: solid;
+    border-color: #170704 ;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    text-align:center;
+    color:#c6b39a;
+    text-decoration: none;
+    font-family:'ubuntu', sans-serif;
+    transition: color 0.6s ease;
+}
+
+.banner-btn:hover{
+    display: block;
+    background-color:#c6b39a;
+    border: solid;
+    border-color:#a1937e;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    text-align:center;
+    color:#301413;
+    text-decoration: none;
+    font-family:'ubuntu', sans-serif;
+}
+
+/*fechamento do banner*/
+
+/*conteúdo da pagina*/
+
+.content-page{
+    display:flex;
+    flex-direction: column;
+    gap: 6%;
+    background-color:#c6b39a;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    padding: 2%;
+}
+
+.fileira{
+    justify-content: center;
+    display: flex;
+    padding: 2%;
+    gap: 3%;
+}
+
+
+.produto{
+    background-color:#fff5e87b;
+    width: 15%;
+    padding: 1%;
+    border-radius: 15px;
+    font-size: medium;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+    
+
+}
+
+.img-produto{
+    width: 100%;
+}
+
+/*sessões*/
+
+.img-slivros{
+    background-image:url(../midia/estantelivros.jpg);
+    width: 100% ;
+    height: 150px;
+    border-radius: 50px;
+    color: #a1937e;
+    justify-self: center;
+    font-size: large;
+}
+
+.img-scd{
+    background-image:url(../midia/cds.jpg);
+    width: 100% ;
+    height: 150px;
+    border-radius: 50px;
+    color: #a1937e;
+    justify-self: center;
+    font-size: large;
+}
+.img-slp{
+    background-image:url(../midia/lps.jpg);
+    width: 100% ;
+    height: 150px;
+    border-radius: 50px;
+    color: #000;
+    justify-self: center;
+    font-size: large;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+   <header> <!--Barra de navegação-->
+       <div class="logo">
+        <h1>sebo</h1>
+       </div>
+
+       <nav class="links">
+        <a class="link" href="index.html">Inicio</a>
+        <div class="dropdown">
+          <button class="btn-pulse">Produtos</button>
+           <div class="dropdown-content">
+            <a link href="produtos.html#livros">livros</a>
+            <a href="produtos.html#lps">lps</a>
+            <a href="produtos.html#cds">cds</a>
+           </div>
+         </div>
+        <a class="link" href="sobre.html">Sobre nós</a>
+        <a class="link" href="formulario.html">Doe seu livro!!</a>
+        <a class="link" href="contato.html">Contato</a>
+       </nav>
+    </header><!--fechamneto da barra de navegação-->
+
+    <div class="content-page"><!--tela de fundo-->  
+        <h1>Doação de produtos</h1>
+
+        <p>doe seus artigos velhos! <br><br> -coloque o seu nome no local indicado;
+        <br>-escreva a categoria do artigo (se é um livro, cd ou lp);<br>-coloque o nome do autor/compositor do artigo;
+        <br>-por fim coloque o nome do artigo;<br>- clique no botão "cadastrar".
+        </p>
+
+        <h3>ATENÇÃO</h3>
+        <h3>aceitamos apenas livros,cds e lps!</h3>
+        <h1>Obrigada por sua doação!!</h1>
+
+      <div id="container">
+        <h1>Cadastro de Produtos</h1>
+        <form id="product-form">
+            <input type="text" id="your-name" placeholder="nome completo" required>
+            <input type="text" id="product-creator" placeholder="Autor/Compositor" required>
+            <input type="text" id="product-name" placeholder="nome do artigo" required>     
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do Produto</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                <!-- Aqui os produtos serão listados dinamicamente -->
+            </tbody>
+        </table>
+
+        <button type="submit">Cadastrar</button>
+        </div>
+    </div>
+</body>
+</html>
