@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doe seu Livro - Sebo de Carneiro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header> <div class="logo">
+        <h1>sebo</h1>
+       </div>
+
+       <nav class="links">
+        <a class="link" href="index.html">Inicio</a>
+        <div class="dropdown">
+          <button class="btn-pulse">Produtos</button>
+           <div class="dropdown-content">
+            <a href="produtos.html#livros">Livros</a>
+            <a href="produtos.html#lps">LPs</a>
+            <a href="produtos.html#cds">CDs</a>
+           </div>
+         </div>
+        <a class="link" href="sobre.html">Sobre nós</a>
+        <a class="link" href="formulario.html">Doe seu livro!!</a>
+       </nav>
+    </header><div class="content-page"><center>
+            <h1 class="section-title">Doação de Produtos</h1>
+        </center>
+
+        <div class="instrucoes-container">
+            <div class="info-box">
+                <h3>Como doar?</h3>
+                <p>Passe as tuas velhas páginas adiante seguindo os passos:</p>
+                <ul>
+                    <li>Coloca o teu nome no local indicado;</li>
+                    <li>Escreve a categoria do artigo (Livro, CD ou LP);</li>
+                    <li>Introduz o nome do autor ou compositor;</li>
+                    <li>Indica o título do artigo e clica em "Cadastrar".</li>
+                </ul>
+            </div>
+            
+            <div class="info-box aviso">
+                <h3>⚠️ ATENÇÃO</h3>
+                <p>Aceitamos única e exclusivamente <strong>livros, CDs e LPs</strong> em bom estado de conservação!</p>
+                <h4 style="margin-top: 15px; color: #4d1519;">Obrigado pela tua doação! ❤️</h4>
+            </div>
+        </div>
+
+       <div id="container">
+            <h2 class="form-title">Simular Cadastro de Doação</h2>
+            
+            <form id="product-form">
+                <div class="form-group">
+                    <input type="text" id="product-yourname" placeholder="Seu Nome (Ex: Sofia Arruda)" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="product-name" placeholder="Nome do Artigo (Ex: Dom Casmurro)" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="product-category" placeholder="Categoria (Livro, CD ou LP)" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="product-author" placeholder="Autor / Compositor (Ex: Machado de Assis)" required>
+                </div>
+                <button type="submit" class="button btn-cadastrar">Cadastrar</button>
+            </form>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Doador</th>
+                            <th>Artigo</th>
+                            <th>Categoria</th>
+                            <th>Autor / Compositor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-list">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>sebo</h2>
+                <p>Onde as velhas páginas ganham novas histórias.</p>
+            </div>
+            <div class="footer-credits">
+                <p>Desenvolvido por: <strong>Sofia Arruda</strong></p>
+                <p>Turma: <strong>2 INFO</strong></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sebo de Carneiro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
